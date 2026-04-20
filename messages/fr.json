@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire",
+    "dashboard": "Tableau de bord",
+    "pricing": "Tarifs",
+    "features": "Fonctionnalités",
+    "about": "À propos"
+  },
+  "hero": {
+    "headline": "Vérifiez les entreprises. Analysez les risques. Tradez en confiance.",
+    "subheadline": "TradeSecurix aide les traders et analystes à vérifier les contreparties et analyser les documents via des rapports de risque structurés avant toute décision financière.",
+    "ctaPrimary": "Voir un exemple de rapport",
+    "ctaSecondary": "Commencer l'essai gratuit de 14 jours",
+    "trustedBy": "Approuvé par des professionnels dans plus de 30 pays"
+  },
+  "demo": {
+    "title": "Découvrez en action",
+    "subtitle": "Démo en direct — toutes les données ci-dessous sont simulées à des fins d'illustration uniquement.",
+    "docScan": "Analyse de documents",
+    "docScanLabel": "DÉMO",
+    "companyVerif": "Vérification d'entreprise",
+    "companyVerifLabel": "DÉMO",
+    "tryOwn": "Essayez votre propre document",
+    "unlockFull": "Débloquer la vérification complète",
+    "fileName": "invoice_sample.pdf",
+    "fileStatus": "Valide",
+    "metaCheck": "Cohérence des métadonnées",
+    "structureCheck": "Validation de la structure",
+    "companyName": "Global Trading Solutions Ltd",
+    "riskScore": "78/100",
+    "riskStatus": "Risque moyen",
+    "flag1": "Données de registre limitées",
+    "flag2": "Exposition transfrontalière"
+  },
+  "trust": {
+    "disclaimer": "TradeSecurix est une plateforme d'analyse. Nous ne détenons PAS de fonds et n'exécutons PAS de transactions.",
+    "company": "Trade Securix LLC (en cours de formation)",
+    "address": "Randall Ave Ste 100, WY 82001, États-Unis",
+    "email": "contact@tradesecurix.com"
+  },
+  "testimonials": {
+    "title": "Ce que disent les professionnels",
+    "subtitle": "Retours d'analystes et de traders utilisant TradeSecurix dans leurs flux de travail.",
+    "t1": { "name": "Sarah M.", "role": "Analyste de risques", "country": "Canada", "text": "Les rapports de risque structurés ont aidé notre équipe à identifier les problèmes de contrepartie bien plus tôt dans le processus." },
+    "t2": { "name": "Carlos R.", "role": "Responsable import/export", "country": "Espagne", "text": "Nous avons commencé à utiliser TradeSecurix pour la vérification des entreprises avant de signer avec de nouveaux fournisseurs." },
+    "t3": { "name": "Fatima A.", "role": "Responsable conformité", "country": "Qatar", "text": "Disposer d'un moyen structuré pour documenter nos étapes de diligence raisonnable a été très utile." },
+    "t4": { "name": "Minh T.", "role": "Consultant en trading", "country": "Vietnam", "text": "La fonction de validation des documents nous a évité une transaction potentiellement problématique." }
+  },
+  "pricing": {
+    "title": "Tarifs simples et transparents",
+    "subtitle": "Évitez les fraudes coûteuses avant qu'elles ne surviennent. Choisissez le plan adapté à votre volume.",
+    "trial": "Essai gratuit de 14 jours inclus dans tous les plans",
+    "monthly": "/ mois",
+    "popular": "Le plus populaire",
+    "ctaStart": "Commencer l'essai gratuit",
+    "ctaContact": "Contacter les ventes",
+    "basic": { "name": "Basique", "price": "49", "desc": "Pour les particuliers qui commencent avec la validation de documents.", "features": ["10–20 analyses de documents/mois", "Validation de base des documents", "Traitement plus lent", "Support par email"] },
+    "pro": { "name": "Pro", "price": "199", "desc": "Accès complet à la plateforme pour les traders et analystes sérieux.", "features": ["Détection complète de fraude documentaire", "Vérification complète d'entreprise", "Système de scoring de risque", "Téléchargement de rapports PDF", "Traitement plus rapide", "Support prioritaire"] },
+    "enterprise": { "name": "Entreprise", "price": "399", "desc": "Utilisation illimitée avec support dédié et accès API.", "features": ["Utilisation illimitée", "Analyses avancées", "Accès API", "Rapports personnalisés", "Responsable de compte dédié"] }
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "totalAnalyses": "Total des analyses",
+    "riskAlerts": "Alertes de risque",
+    "verifiedCompanies": "Entreprises vérifiées",
+    "scansRemaining": "Analyses restantes",
+    "uploadDoc": "Téléverser un document",
+    "runVerif": "Vérifier une entreprise",
+    "reportsHistory": "Historique des rapports",
+    "upgrade": "Passer à Pro",
+    "upgradeDesc": "Commencez votre essai gratuit de 14 jours pour débloquer les rapports de vérification complets.",
+    "locked": "Cette fonctionnalité nécessite un abonnement Pro.",
+    "noReports": "Aucun rapport pour l'instant. Téléversez un document ou lancez une vérification pour commencer."
+  },
+  "report": {
+    "title": "Rapport de risque",
+    "downloadPdf": "Télécharger le PDF",
+    "summary": "Résumé",
+    "companyData": "Données de l'entreprise",
+    "riskAnalysis": "Analyse de risque",
+    "conclusion": "Conclusion",
+    "lockedTitle": "Rapport complet verrouillé",
+    "lockedDesc": "Commencez votre essai gratuit de 14 jours pour débloquer les rapports complets."
+  },
+  "admin": {
+    "title": "Panneau d'administration",
+    "users": "Utilisateurs",
+    "reports": "Rapports",
+    "subscriptions": "Abonnements",
+    "revenue": "Revenus"
+  }
+}

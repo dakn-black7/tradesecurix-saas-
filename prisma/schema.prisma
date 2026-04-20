@@ -1,0 +1,58 @@
+// This is your Prisma schema file.
+// Learn more: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  clerkId      String   @unique
+  email        String   @unique
+  name         String?
+  plan         Plan     @default(BASIC)
+  stripeCustomerId String?
+  stripeSubscriptionId String?
+  scansUsed    Int      @default(0)
+  scansLimit   Int      @default(20)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  reports      Report[]
+}
+
+model Report {
+  id         String     @id @default(cuid())
+  userId     String
+  user       User       @relation(fields: [userId], references: [id])
+  type       ReportType
+  name       String
+  riskScore  Int?
+  riskLevel  RiskLevel?
+  status     String
+  data       Json?
+  createdAt  DateTime   @default(now())
+}
+
+enum Plan {
+  FREE
+  BASIC
+  PRO
+  ENTERPRISE
+}
+
+enum ReportType {
+  DOCUMENT
+  COMPANY
+}
+
+enum RiskLevel {
+  LOW
+  MEDIUM
+  HIGH
+}

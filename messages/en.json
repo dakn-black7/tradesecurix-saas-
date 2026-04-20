@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "dashboard": "Dashboard",
+    "pricing": "Pricing",
+    "features": "Features",
+    "about": "About"
+  },
+  "hero": {
+    "headline": "Verify Companies. Analyze Risk. Trade with Confidence.",
+    "subheadline": "TradeSecurix helps traders and analysts verify counterparties and analyze documents through structured risk reports before making financial decisions.",
+    "ctaPrimary": "View Sample Report",
+    "ctaSecondary": "Start 14-Day Free Trial",
+    "trustedBy": "Trusted by professionals in 30+ countries"
+  },
+  "demo": {
+    "title": "See It In Action",
+    "subtitle": "Live demo — all data below is simulated for illustration purposes only.",
+    "docScan": "Document Scan",
+    "docScanLabel": "DEMO",
+    "companyVerif": "Company Verification",
+    "companyVerifLabel": "DEMO",
+    "tryOwn": "Try Your Own Document",
+    "unlockFull": "Unlock Full Verification",
+    "fileName": "invoice_sample.pdf",
+    "fileStatus": "Valid",
+    "metaCheck": "Metadata consistency",
+    "structureCheck": "Structure validation",
+    "companyName": "Global Trading Solutions Ltd",
+    "riskScore": "78/100",
+    "riskStatus": "Medium Risk",
+    "flag1": "Limited registry data",
+    "flag2": "Cross-border exposure"
+  },
+  "trust": {
+    "disclaimer": "TradeSecurix is an analytics platform. We do NOT hold funds or execute trades.",
+    "company": "Trade Securix LLC (in formation)",
+    "address": "Randall Ave Ste 100, WY 82001, USA",
+    "email": "contact@tradesecurix.com"
+  },
+  "testimonials": {
+    "title": "What Professionals Say",
+    "subtitle": "Feedback from analysts and traders using TradeSecurix in their workflows.",
+    "t1": {
+      "name": "Sarah M.",
+      "role": "Risk Analyst",
+      "country": "Canada",
+      "text": "The structured risk reports have helped my team flag potential counterparty issues much earlier in the process. It's become a routine step before any new partnership."
+    },
+    "t2": {
+      "name": "Carlos R.",
+      "role": "Import/Export Manager",
+      "country": "Spain",
+      "text": "We started using TradeSecurix for company verification before engaging new suppliers. The clarity of the reports made the process straightforward."
+    },
+    "t3": {
+      "name": "Fatima A.",
+      "role": "Compliance Officer",
+      "country": "Qatar",
+      "text": "As someone in compliance, having a structured way to document our due diligence steps has been valuable. The platform is clear and professional."
+    },
+    "t4": {
+      "name": "Minh T.",
+      "role": "Trading Consultant",
+      "country": "Vietnam",
+      "text": "The document validation feature saved us from a potentially problematic deal. Good tooling for anyone working with international counterparties."
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Avoid costly fraud before it happens. Choose the plan that fits your volume.",
+    "trial": "14-day free trial included on all plans",
+    "monthly": "/ month",
+    "popular": "Most Popular",
+    "ctaStart": "Start Free Trial",
+    "ctaContact": "Contact Sales",
+    "basic": {
+      "name": "Basic",
+      "price": "49",
+      "desc": "For individuals getting started with document validation.",
+      "features": ["10–20 document scans/month", "Basic document validation", "Slower processing", "Email support"]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "199",
+      "desc": "Full platform access for serious traders and analysts.",
+      "features": ["Full document fraud detection", "Full company verification", "Risk scoring system", "PDF report downloads", "Faster processing", "Priority support"]
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "399",
+      "desc": "Unlimited usage with dedicated support and API access.",
+      "features": ["Unlimited usage", "Advanced analytics", "API access", "Custom reports", "Dedicated account manager"]
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "totalAnalyses": "Total Analyses",
+    "riskAlerts": "Risk Alerts",
+    "verifiedCompanies": "Verified Companies",
+    "scansRemaining": "Scans Remaining",
+    "uploadDoc": "Upload Document",
+    "runVerif": "Run Company Verification",
+    "reportsHistory": "Reports History",
+    "upgrade": "Upgrade to Pro",
+    "upgradeDesc": "Start your 14-day free trial to unlock full verification reports and protect your transactions.",
+    "locked": "This feature requires a Pro subscription.",
+    "noReports": "No reports yet. Upload a document or run a company verification to get started."
+  },
+  "report": {
+    "title": "Risk Report",
+    "downloadPdf": "Download PDF",
+    "summary": "Summary",
+    "companyData": "Company Data",
+    "riskAnalysis": "Risk Analysis",
+    "conclusion": "Conclusion",
+    "lockedTitle": "Full Report Locked",
+    "lockedDesc": "Start your 14-day free trial to unlock full verification reports and protect your transactions."
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "users": "Users",
+    "reports": "Reports",
+    "subscriptions": "Subscriptions",
+    "revenue": "Revenue"
+  }
+}

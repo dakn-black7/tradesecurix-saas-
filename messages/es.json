@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "signIn": "Iniciar Sesión",
+    "signUp": "Registrarse",
+    "dashboard": "Panel",
+    "pricing": "Precios",
+    "features": "Funciones",
+    "about": "Acerca de"
+  },
+  "hero": {
+    "headline": "Verifica Empresas. Analiza Riesgos. Opera con Confianza.",
+    "subheadline": "TradeSecurix ayuda a traders y analistas a verificar contrapartes y analizar documentos mediante informes de riesgo estructurados antes de tomar decisiones financieras.",
+    "ctaPrimary": "Ver Informe de Muestra",
+    "ctaSecondary": "Iniciar Prueba Gratuita de 14 Días",
+    "trustedBy": "Con la confianza de profesionales en más de 30 países"
+  },
+  "demo": {
+    "title": "Véalo en Acción",
+    "subtitle": "Demo en vivo — todos los datos a continuación son simulados solo con fines ilustrativos.",
+    "docScan": "Escaneo de Documentos",
+    "docScanLabel": "DEMO",
+    "companyVerif": "Verificación de Empresa",
+    "companyVerifLabel": "DEMO",
+    "tryOwn": "Prueba Tu Propio Documento",
+    "unlockFull": "Desbloquear Verificación Completa",
+    "fileName": "invoice_sample.pdf",
+    "fileStatus": "Válido",
+    "metaCheck": "Consistencia de metadatos",
+    "structureCheck": "Validación de estructura",
+    "companyName": "Global Trading Solutions Ltd",
+    "riskScore": "78/100",
+    "riskStatus": "Riesgo Medio",
+    "flag1": "Datos de registro limitados",
+    "flag2": "Exposición transfronteriza"
+  },
+  "trust": {
+    "disclaimer": "TradeSecurix es una plataforma de análisis. NO retenemos fondos ni ejecutamos operaciones.",
+    "company": "Trade Securix LLC (en formación)",
+    "address": "Randall Ave Ste 100, WY 82001, EE.UU.",
+    "email": "contact@tradesecurix.com"
+  },
+  "testimonials": {
+    "title": "Lo que Dicen los Profesionales",
+    "subtitle": "Comentarios de analistas y traders que usan TradeSecurix en sus flujos de trabajo.",
+    "t1": { "name": "Sarah M.", "role": "Analista de Riesgos", "country": "Canadá", "text": "Los informes de riesgo estructurados han ayudado a mi equipo a identificar problemas con contrapartes mucho antes en el proceso." },
+    "t2": { "name": "Carlos R.", "role": "Gerente de Importación/Exportación", "country": "España", "text": "Comenzamos a usar TradeSecurix para la verificación de empresas antes de contratar nuevos proveedores. La claridad de los informes hizo el proceso sencillo." },
+    "t3": { "name": "Fatima A.", "role": "Oficial de Cumplimiento", "country": "Qatar", "text": "Tener una forma estructurada de documentar nuestros pasos de diligencia debida ha sido valioso. La plataforma es clara y profesional." },
+    "t4": { "name": "Minh T.", "role": "Consultor de Trading", "country": "Vietnam", "text": "La función de validación de documentos nos salvó de un trato potencialmente problemático." }
+  },
+  "pricing": {
+    "title": "Precios Simples y Transparentes",
+    "subtitle": "Evita el fraude costoso antes de que ocurra. Elige el plan que se adapte a tu volumen.",
+    "trial": "Prueba gratuita de 14 días incluida en todos los planes",
+    "monthly": "/ mes",
+    "popular": "Más Popular",
+    "ctaStart": "Iniciar Prueba Gratuita",
+    "ctaContact": "Contactar Ventas",
+    "basic": { "name": "Básico", "price": "49", "desc": "Para personas que comienzan con la validación de documentos.", "features": ["10–20 escaneos de documentos/mes", "Validación básica de documentos", "Procesamiento más lento", "Soporte por correo electrónico"] },
+    "pro": { "name": "Pro", "price": "199", "desc": "Acceso completo a la plataforma para traders y analistas serios.", "features": ["Detección completa de fraude en documentos", "Verificación completa de empresas", "Sistema de puntuación de riesgos", "Descarga de informes en PDF", "Procesamiento más rápido", "Soporte prioritario"] },
+    "enterprise": { "name": "Empresarial", "price": "399", "desc": "Uso ilimitado con soporte dedicado y acceso a la API.", "features": ["Uso ilimitado", "Análisis avanzados", "Acceso a la API", "Informes personalizados", "Gestor de cuenta dedicado"] }
+  },
+  "dashboard": {
+    "title": "Panel de Control",
+    "totalAnalyses": "Total de Análisis",
+    "riskAlerts": "Alertas de Riesgo",
+    "verifiedCompanies": "Empresas Verificadas",
+    "scansRemaining": "Escaneos Restantes",
+    "uploadDoc": "Subir Documento",
+    "runVerif": "Verificar Empresa",
+    "reportsHistory": "Historial de Informes",
+    "upgrade": "Actualizar a Pro",
+    "upgradeDesc": "Inicia tu prueba gratuita de 14 días para desbloquear informes de verificación completos.",
+    "locked": "Esta función requiere una suscripción Pro.",
+    "noReports": "Aún no hay informes. Sube un documento o ejecuta una verificación para comenzar."
+  },
+  "report": {
+    "title": "Informe de Riesgo",
+    "downloadPdf": "Descargar PDF",
+    "summary": "Resumen",
+    "companyData": "Datos de la Empresa",
+    "riskAnalysis": "Análisis de Riesgo",
+    "conclusion": "Conclusión",
+    "lockedTitle": "Informe Completo Bloqueado",
+    "lockedDesc": "Inicia tu prueba gratuita de 14 días para desbloquear informes de verificación completos."
+  },
+  "admin": {
+    "title": "Panel de Administración",
+    "users": "Usuarios",
+    "reports": "Informes",
+    "subscriptions": "Suscripciones",
+    "revenue": "Ingresos"
+  }
+}
