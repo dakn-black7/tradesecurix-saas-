@@ -52,7 +52,7 @@ export default function Navbar() {
             </>
           ) : null}
           {isSignedIn ? (
-            <UserButton afterSignOutUrl={base} />
+            <UserButton />
           ) : null}
         </nav>
 
@@ -89,7 +89,7 @@ export default function Navbar() {
             </>
           ) : null}
           {isSignedIn ? (
-            <UserButton afterSignOutUrl={base} />
+            <UserButton />
           ) : null}
         </div>
       )}
