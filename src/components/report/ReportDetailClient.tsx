@@ -25,11 +25,11 @@ const MOCK_REPORT = {
   summary:
     "Meridian Import Co. is a registered entity in the United Kingdom with an established trading history. The analysis indicates a low-risk profile based on available registry data, financial exposure indicators, and cross-border activity.",
   riskFactors: [
-    { label: "Registry status", value: "Active — verified", type: "pass" },
-    { label: "Director history", value: "Stable", type: "pass" },
-    { label: "Cross-border exposure", value: "Moderate", type: "warn" },
-    { label: "Filing consistency", value: "Up to date", type: "pass" },
-    { label: "Adverse media signals", value: "None detected", type: "pass" },
+    { label: "Registry status", value: "Active — verified", type: "pass" as const },
+    { label: "Director history", value: "Stable", type: "pass" as const },
+    { label: "Cross-border exposure", value: "Moderate", type: "warn" as const },
+    { label: "Filing consistency", value: "Up to date", type: "pass" as const },
+    { label: "Adverse media signals", value: "None detected", type: "pass" as const },
   ],
   conclusion:
     "Based on available data, Meridian Import Co. presents a low-risk profile for trade engagement. Standard due diligence procedures are recommended before finalizing any commercial agreement.",

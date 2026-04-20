@@ -34,7 +34,7 @@ export default async function LocaleLayout({
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <ClerkProvider>
+    <ClerkProvider afterSignOutUrl={`/${locale}`}>
       <NextIntlClientProvider messages={messages}>
         <div lang={locale} dir={dir} className="min-h-screen flex flex-col">
           {children}

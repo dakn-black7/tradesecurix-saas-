@@ -2,10 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth, currentUser } from "@clerk/nextjs/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
-  apiVersion: "2026-03-25.dahlia",
-});
-
 const PRICE_MAP: Record<string, string> = {
   basic: process.env.STRIPE_PRICE_BASIC ?? "",
   pro: process.env.STRIPE_PRICE_PRO ?? "",
@@ -13,6 +9,12 @@ const PRICE_MAP: Record<string, string> = {
 };
 
 export async function POST(req: NextRequest) {
+  const stripeKey = process.env.STRIPE_SECRET_KEY;
+  if (!stripeKey) {
+    return NextResponse.json({ error: "Stripe not configured" }, { status: 503 });
+  }
+  const stripe = new Stripe(stripeKey, { apiVersion: "2026-03-25.dahlia" });
+
   const { userId } = await auth();
   if (!userId) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

@@ -1,11 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
-  apiVersion: "2026-03-25.dahlia",
-});
-
 export async function POST(req: NextRequest) {
+  const stripeKey = process.env.STRIPE_SECRET_KEY;
+  if (!stripeKey) {
+    return NextResponse.json({ error: "Stripe not configured" }, { status: 503 });
+  }
+  const stripe = new Stripe(stripeKey, { apiVersion: "2026-03-25.dahlia" });
+
   const body = await req.text();
   const sig = req.headers.get("stripe-signature") ?? "";
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET ?? "";
