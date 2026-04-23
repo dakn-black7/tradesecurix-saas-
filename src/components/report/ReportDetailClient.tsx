@@ -1,4 +1,4 @@
-use client;
+"use client";
 
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
@@ -117,7 +117,7 @@ export default function ReportDetailClient({
             </span>
           </div>
         </div>
-        <div className="flex flex-col items-center"> 
+        <div className="flex flex-col items-center">
           <RiskScoreGauge score={MOCK_REPORT.riskScore} />
         </div>
       </div>
