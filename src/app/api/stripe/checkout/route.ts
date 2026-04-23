@@ -2,9 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth, currentUser } from "@clerk/nextjs/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
-  apiVersion: "2026-03-25.dahlia",
-});
+function getStripe() {
+  const key = process.env.STRIPE_SECRET_KEY;
+  if (!key) {
+    throw new Error("STRIPE_SECRET_KEY is not set");
+  }
+  return new Stripe(key, { apiVersion: "2026-03-25.dahlia" });
+}
 
 const PRICE_MAP: Record<string, string> = {
   basic: process.env.STRIPE_PRICE_BASIC ?? "",
@@ -25,6 +29,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid plan" }, { status: 400 });
   }
 
+  const stripe = getStripe();
   const user = await currentUser();
   const email = user?.emailAddresses?.[0]?.emailAddress;
 
