@@ -1,4 +1,4 @@
-"use client";
+use client;
 
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
@@ -23,7 +23,7 @@ const MOCK_REPORT = {
   status: "Low Risk",
   statusColor: "bg-emerald-100 text-emerald-700 border-emerald-200",
   summary:
-    "Meridian Import Co. is a registered entity in the United Kingdom with an established trading history. The analysis indicates a low-risk profile based on available registry data, financial exposure, and cross-border activity.",
+    "Meridian Import Co. is a registered entity in the United Kingdom with an established trading history. The analysis indicates a low-risk profile based on available registry data, financial exposure, and directorship records. No significant adverse indicators were detected during the review period.",
   riskFactors: [
     { label: "Registry status", value: "Active — verified", type: "pass" as const },
     { label: "Director history", value: "Stable", type: "pass" as const },
@@ -99,13 +99,11 @@ export default function ReportDetailClient({
 
   return (
     <div className="p-6 lg:p-8 max-w-4xl mx-auto space-y-8">
-      {/* Back */}
       <Link href={`/${locale}/reports`} className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-700">
         <ArrowLeft className="w-4 h-4" />
         Back to Reports
       </Link>
 
-      {/* Report Header */}
       <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div className="flex items-center gap-4">
           <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center">
@@ -119,12 +117,11 @@ export default function ReportDetailClient({
             </span>
           </div>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center"> 
           <RiskScoreGauge score={MOCK_REPORT.riskScore} />
         </div>
       </div>
 
-      {/* Download PDF */}
       <div className="flex justify-end">
         {isPro ? (
           <button
@@ -142,7 +139,6 @@ export default function ReportDetailClient({
         )}
       </div>
 
-      {/* Summary */}
       <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
         <h2 className="font-semibold text-slate-900 mb-3 flex items-center gap-2">
           <ShieldAlert className="w-5 h-5 text-blue-600" />
@@ -151,7 +147,6 @@ export default function ReportDetailClient({
         <p className="text-sm text-slate-600 leading-relaxed">{MOCK_REPORT.summary}</p>
       </div>
 
-      {/* Company Data */}
       <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
         <h2 className="font-semibold text-slate-900 mb-4">{t("companyData")}</h2>
         <div className="grid grid-cols-2 gap-4">
@@ -169,7 +164,6 @@ export default function ReportDetailClient({
         </div>
       </div>
 
-      {/* Risk Analysis */}
       <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
         <h2 className="font-semibold text-slate-900 mb-4">{t("riskAnalysis")}</h2>
         <div>
@@ -179,7 +173,6 @@ export default function ReportDetailClient({
         </div>
       </div>
 
-      {/* Conclusion */}
       <div className="bg-slate-900 rounded-2xl p-6 text-white">
         <h2 className="font-semibold mb-3">{t("conclusion")}</h2>
         <p className="text-sm text-slate-300 leading-relaxed">{MOCK_REPORT.conclusion}</p>
