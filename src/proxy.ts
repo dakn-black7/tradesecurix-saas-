@@ -1,6 +1,7 @@
 import createMiddleware from "next-intl/middleware";
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 import { routing } from "./i18n/routing";
+import { NextResponse } from "next/server";
 
 const intlMiddleware = createMiddleware(routing);
 
@@ -14,6 +15,10 @@ const isProtectedRoute = createRouteMatcher([
 export default clerkMiddleware(async (auth, req) => {
   if (isProtectedRoute(req)) {
     await auth.protect();
+  }
+  // Don't apply locale middleware to API routes
+  if (req.nextUrl.pathname.startsWith("/api")) {
+    return NextResponse.next();
   }
   return intlMiddleware(req);
 });
