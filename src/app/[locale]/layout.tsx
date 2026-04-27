@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getLocale } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import { ClerkProvider } from "@clerk/nextjs";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
