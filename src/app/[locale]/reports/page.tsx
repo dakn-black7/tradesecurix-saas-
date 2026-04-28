@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { ClipboardList, FileText, Building2 } from "lucide-react";

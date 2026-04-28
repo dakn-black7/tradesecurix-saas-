@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import { currentUser } from "@clerk/nextjs/server";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
